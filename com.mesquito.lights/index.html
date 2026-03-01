@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script src="file:///mnt/us/mesquito/polyfill.min.js"></script>
+    <script src="file:///mnt/us/mesquito/sdk.js"></script>
+  
+    <link href="./main.css" rel="stylesheet">  
+    <script src="./config.js"></script>
+    <script src="./main.js"></script>
+    
+
+
+    <title>Kindle Light Controls</title>
+    <!-- <meta name="viewport" content="user-scalable=no"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h1>Lights Control</h1>
+
+<table>
+  <tr>
+    <td><i>Lower<i/></td>  
+    <td><i>Toggle</i></td>  
+    <td><i>Raise</i></td>  
+  </tr>
+  <tr>
+    <td><button class="sublight" onclick="sendPost(LOWER_LIVINGROOM_WEBHOOK)">-10%</button><br></td>
+    <td><button class="light" onclick="sendPost(TOGGLE_LIVINGROOM_WEBHOOK)">Living Room Lights</button><br></td>
+    <td><button class="sublight" onclick="sendPost(BRIGHTEN_LIVINGROOM_WEBHOOK)">+10%</button><br></td>
+  </tr>
+  <tr>
+    <td><button class="sublight" onclick="sendPost(LOWER_OFFICE_WEBHOOK)">-10%</button><br></td>
+    <td><button class="light" onclick="sendPost(TOGGLE_OFFICE_WEBHOOK)">Office Lights</button><br></td>
+    <td><button class="sublight" onclick="sendPost(BRIGHTEN_OFFICE_WEBHOOK)">+10%</button><br></td>
+  </tr>
+  <tr>
+    <td><button class="sublight" onclick="sendPost(LOWER_BEDROOM_WEBHOOK)">-10%</button><br></td>
+    <td><button class="light" onclick="sendPost(TOGGLE_BEDROOM_WEBHOOK)">Bedroom Lights</button><br></td>
+    <td><button class="sublight" onclick="sendPost(BRIGHTEN_BEDROOM_WEBHOOK)">+10%</button><br></td>
+  </tr>
+</table>
+
+<br>
+
+    <button id="flip" onclick="flipOrientation()">Flip Orientation</button>
+
+
+
+</body>
+</html>

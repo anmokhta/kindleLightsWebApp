@@ -1,0 +1,13 @@
+{
+  "minVersion": 2,
+  "manifestVersion": 2,
+  "appVersion": "v3.0.0",
+  "waf": true,
+  "id": "com.mesquito.lights",
+  "name": "House Lights",
+  "author": "drewmoney",
+  "description": "Portal for Room Lights",
+  "repo": "https://example2.com",
+  "icon": "icon.png",
+  "entrypoint": "index.html"
+}
